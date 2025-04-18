@@ -9,13 +9,18 @@ let package = Package(
     products: [
         .library(
             name: "FoxCoreDataService",
-            targets: ["Core", "Helpers", "Protocols"]
+            targets: ["FoxCoreDataService"]
         )
     ],
     dependencies: [
         .package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", from: "3.0.0")
     ],
     targets: [
+        .target(
+            name: "FoxCoreDataService",
+            dependencies: ["Core", "Helpers", "Protocols"],
+            path: "Sources/FoxCoreDataService/FoxCoreDataService"
+        ),
         .target(
             name: "Core",
             dependencies: [
