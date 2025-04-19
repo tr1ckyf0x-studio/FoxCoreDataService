@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name = 'FoxCoreDataService'
-    spec.version = '1.0.0'
+    spec.version = '1.1.0'
     spec.summary = 'FoxStudio CoreData service'
     spec.homepage = 'https://github.com/tr1ckyf0x-studio/FoxCoreDataService'
     spec.author = { 'Vladislav Lisianskii' => 'vladislav.lisyanskiy@gmail.com' }
